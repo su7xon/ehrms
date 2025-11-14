@@ -1,0 +1,10 @@
+{
+  "/api/payroll/list/route": "app/api/payroll/list/route.js",
+  "/chatbot/page": "app/chatbot/page.js",
+  "/job-profile/page": "app/job-profile/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/payroll/page": "app/payroll/page.js",
+  "/promotion/page": "app/promotion/page.js",
+  "/salary-slip/page": "app/salary-slip/page.js"
+}

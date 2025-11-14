@@ -1,0 +1,141 @@
+{
+  "version": 3,
+  "pages404": true,
+  "caseSensitive": false,
+  "basePath": "",
+  "redirects": [
+    {
+      "source": "/:path+/",
+      "destination": "/:path+",
+      "internal": true,
+      "priority": true,
+      "statusCode": 308,
+      "regex": "^(?:/((?:[^/]+?)(?:/(?:[^/]+?))*))/$"
+    }
+  ],
+  "headers": [],
+  "rewrites": {
+    "beforeFiles": [],
+    "afterFiles": [],
+    "fallback": []
+  },
+  "dynamicRoutes": [],
+  "staticRoutes": [
+    {
+      "page": "/",
+      "regex": "^/(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/(?:/)?$"
+    },
+    {
+      "page": "/_global-error",
+      "regex": "^/_global\\-error(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_global\\-error(?:/)?$"
+    },
+    {
+      "page": "/_not-found",
+      "regex": "^/_not\\-found(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/api/job-profile/update",
+      "regex": "^/api/job\\-profile/update(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/job\\-profile/update(?:/)?$"
+    },
+    {
+      "page": "/api/payroll/check",
+      "regex": "^/api/payroll/check(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payroll/check(?:/)?$"
+    },
+    {
+      "page": "/api/payroll/fix",
+      "regex": "^/api/payroll/fix(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payroll/fix(?:/)?$"
+    },
+    {
+      "page": "/api/payroll/generate",
+      "regex": "^/api/payroll/generate(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payroll/generate(?:/)?$"
+    },
+    {
+      "page": "/api/payroll/list",
+      "regex": "^/api/payroll/list(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payroll/list(?:/)?$"
+    },
+    {
+      "page": "/api/payroll/update",
+      "regex": "^/api/payroll/update(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/api/payroll/update(?:/)?$"
+    },
+    {
+      "page": "/chatbot",
+      "regex": "^/chatbot(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/chatbot(?:/)?$"
+    },
+    {
+      "page": "/job-profile",
+      "regex": "^/job\\-profile(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/job\\-profile(?:/)?$"
+    },
+    {
+      "page": "/login",
+      "regex": "^/login(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/login(?:/)?$"
+    },
+    {
+      "page": "/payroll",
+      "regex": "^/payroll(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/payroll(?:/)?$"
+    },
+    {
+      "page": "/promotion",
+      "regex": "^/promotion(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/promotion(?:/)?$"
+    },
+    {
+      "page": "/salary-slip",
+      "regex": "^/salary\\-slip(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/salary\\-slip(?:/)?$"
+    }
+  ],
+  "dataRoutes": [],
+  "rsc": {
+    "header": "rsc",
+    "varyHeader": "rsc, next-router-state-tree, next-router-prefetch, next-router-segment-prefetch",
+    "prefetchHeader": "next-router-prefetch",
+    "didPostponeHeader": "x-nextjs-postponed",
+    "contentTypeHeader": "text/x-component",
+    "suffix": ".rsc",
+    "prefetchSuffix": ".prefetch.rsc",
+    "prefetchSegmentHeader": "next-router-segment-prefetch",
+    "prefetchSegmentSuffix": ".segment.rsc",
+    "prefetchSegmentDirSuffix": ".segments",
+    "clientParamParsing": true,
+    "dynamicRSCPrerender": true
+  },
+  "rewriteHeaders": {
+    "pathHeader": "x-nextjs-rewritten-path",
+    "queryHeader": "x-nextjs-rewritten-query"
+  },
+  "ppr": {
+    "chain": {
+      "headers": {
+        "next-resume": "1"
+      }
+    }
+  }
+}

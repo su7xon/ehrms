@@ -1,0 +1,17 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/job-profile/update/route": "/api/job-profile/update",
+  "/api/payroll/check/route": "/api/payroll/check",
+  "/api/payroll/fix/route": "/api/payroll/fix",
+  "/api/payroll/generate/route": "/api/payroll/generate",
+  "/api/payroll/list/route": "/api/payroll/list",
+  "/api/payroll/update/route": "/api/payroll/update",
+  "/chatbot/page": "/chatbot",
+  "/job-profile/page": "/job-profile",
+  "/login/page": "/login",
+  "/page": "/",
+  "/payroll/page": "/payroll",
+  "/promotion/page": "/promotion",
+  "/salary-slip/page": "/salary-slip"
+}
