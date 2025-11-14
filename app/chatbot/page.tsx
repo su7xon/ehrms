@@ -9,14 +9,7 @@ import QuickReplies from '@/components/chatbot/quick-replies'
 import VoiceButton from '@/components/chatbot/voice-button'
 
 export default function ChatbotPage() {
-  const [messages, setMessages] = useState([
-    {
-      id: 1,
-      type: 'bot',
-      content: 'Hello Rajesh! 👋 I\'m your HR Assistant. How can I help you today? You can ask me about salary, leave, promotions, policies, or anything HR-related.',
-      timestamp: new Date()
-    }
-  ])
+  const [messages, setMessages] = useState<any[]>([])
   const [inputValue, setInputValue] = useState('')
   const [isListening, setIsListening] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
@@ -24,6 +17,18 @@ export default function ChatbotPage() {
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' })
   }
+
+  useEffect(() => {
+    // Initialize with greeting message only on client-side
+    setMessages([
+      {
+        id: 1,
+        type: 'bot',
+        content: 'Hello Rajesh! 👋 I\'m your HR Assistant. How can I help you today? You can ask me about salary, leave, promotions, policies, or anything HR-related.',
+        timestamp: new Date()
+      }
+    ])
+  }, [])
 
   useEffect(() => {
     scrollToBottom()
